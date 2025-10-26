@@ -13,7 +13,7 @@ import { InputField, SelectField } from "./InputField";
 import WebcamCapture from "./WebcamCapture";
 import axios from "axios";
 
-const API_URL = "http://localhost:8000/api";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 
 const GeneralGuestForm = () => {
   const navigate = useNavigate();
